@@ -18,10 +18,7 @@ import com.formdev.flatlaf.FlatIntelliJLaf;
 import com.formdev.flatlaf.FlatIconColors;
 import com.formdev.flatlaf.IntelliJTheme;
 
-/**
- *
- * @author ricar
- */
+
 public class app extends javax.swing.JFrame {
 
     /**
@@ -1675,7 +1672,7 @@ public class app extends javax.swing.JFrame {
         for(int i=0;i<10;i++){
                     datos[0][i]="";
         }
-        
+
         comboBCampo.removeAllItems();
         tablaBuscar.removeAll();
         
