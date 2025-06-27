@@ -19,17 +19,17 @@ public class MySQLConn {
     public MySQLConn() {
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
-            String connectionurl="jdbc:mysql://127.0.0.1/cimeags?"
-                    +"characterEnconding=latin1&"
-                    +"user=root&password=P0rf1r10";
-          conn=DriverManager.getConnection(connectionurl);
-                    
+            String url = "jdbc:mysql://localhost:3306/cimeags?user=root&password=&useSSL=false&serverTimezone=UTC";
+            conn = DriverManager.getConnection(url);
+
+            System.out.println(conn);
         }catch (SQLException e){
             System.out.println("SQL Exception: " + e.toString());
         } catch (ClassNotFoundException ex) {
             System.out.println("ClassNotFoundException: "+ex.toString());
         }
 
+        System.out.println(conn);
     }
     
     public void consult(String query){
